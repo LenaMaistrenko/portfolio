@@ -7,23 +7,28 @@ const Projects = () => {
       description: 'Adaptive landing page',
       linkProject: 'https://lenamaistrenko.github.io/goit-markup-hw-08/',
       linkCode: 'https://github.com/LenaMaistrenko/goit-markup-hw-08',
-      image: '../../img/webStudio.jpg',
+      image: require('img/webStudio.jpg'),
     },
     {
       title: 'Ice Cream',
       description: 'Command project',
       linkProject: 'https://lenamaistrenko.github.io/IceCreamProject/',
       linkCode: 'https://github.com/LenaMaistrenko/IceCreamProject',
-      image: '../../img/iceCream.jpg',
+      image: require('img/iceCream.jpg'),
+    },
+    {
+      title: 'Filmoteka',
+      description: 'Command project',
+      linkProject: 'https://lenamaistrenko.github.io/Filmoteka/',
+      linkCode: 'https://github.com/LenaMaistrenko/Filmoteka',
+      image: require('img/filmoteka.jpg'),
     },
   ];
-  console.log(myProjects[0].image);
+
   return (
     <section>
       <h2>My projects</h2>
       <div>
-        <img src="src/img/iceCream.jpg" alt="sdsd" />
-
         {myProjects.map((project, index) => (
           <div key={index}>
             <img src={project.image} alt={project.title} />
