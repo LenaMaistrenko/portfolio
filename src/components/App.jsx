@@ -1,16 +1,16 @@
+import React from 'react';
+import Header from './Header/Header';
+import About from './About/About';
+import Projects from './Projects/Projects';
+import Contacts from './Contacts/Contacts';
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      {' '}
+      <Header />;
+      <About />
+      <Projects />
+      <Contacts />
     </div>
   );
 };
