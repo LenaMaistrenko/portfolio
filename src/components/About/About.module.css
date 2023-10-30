@@ -1,0 +1,63 @@
+.about_container {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(160, 161, 169, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../../img/hero.jpg');
+  /* background-image: url('../../img/hero.jpg'); */
+}
+
+.about_info {
+  display: flex;
+
+  padding: 100px 0px 100px 0px;
+}
+.about_text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px;
+}
+
+.about_wrapper {
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 100%;
+  justify-content: center;
+  /* margin-top: 10%; */
+}
+
+.about_title {
+  width: 34ch;
+  overflow: hidden;
+  color: white;
+  font-size: 20px;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 2px solid white;
+  animation:
+    printed-text 5s steps(34),
+    flashin-border 0.75s step-start infinite;
+}
+
+@keyframes flashin-border {
+  0% {
+    border-color: white;
+  }
+
+  50% {
+    border-color: transparent;
+  }
+
+  100% {
+    border-color: white;
+  }
+}
+
+@keyframes printed-text {
+  from {
+    width: 0%;
+  }
+}

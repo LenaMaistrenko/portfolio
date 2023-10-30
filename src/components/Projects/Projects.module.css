@@ -1,0 +1,22 @@
+.projects_container {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-image: linear-gradient(
+    to right,
+    rgba(206, 207, 214, 0.4),
+    rgba(37, 38, 52, 0.4)
+  );
+}
+.projects_cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.projects_card {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  border: 2px solid red;
+}

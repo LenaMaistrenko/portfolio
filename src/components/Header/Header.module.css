@@ -1,0 +1,9 @@
+.header_container {
+}
+.nav {
+}
+
+.nav_list {
+  display: flex;
+  list-style-type: none;
+}

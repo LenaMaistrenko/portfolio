@@ -1,14 +1,15 @@
 import React from 'react';
+import css from './Header.module.css';
 const Header = () => {
   return (
-    <header>
+    <header className={css.header_container}>
       {' '}
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contacts</li>
+      <nav className={css.nav}>
+        <ul className={css.nav_list}>
+          <li className={css.nav_item}>Home</li>
+          <li className={css.nav_item}>About</li>
+          <li className={css.nav_item}>Projects</li>
+          <li className={css.nav_item}>Contacts</li>
         </ul>
       </nav>
     </header>
